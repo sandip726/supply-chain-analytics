@@ -1,54 +1,57 @@
-COLUMN_NAME	DATA_TYPE
-Type	nvarchar
-Days for shipping (real)	nvarchar
-Days for shipment (scheduled)	nvarchar
-Benefit per order	nvarchar
-Sales per customer	nvarchar
-Delivery Status	nvarchar
-Late_delivery_risk	nvarchar
-Category Id	nvarchar
-Category Name	nvarchar
-Customer City	nvarchar
-Customer Country	nvarchar
-Customer Email	nvarchar
-Customer Fname	nvarchar
-Customer Id	nvarchar
-Customer Lname	nvarchar
-Customer Password	nvarchar
-Customer Segment	nvarchar
-Customer State	nvarchar
-Customer Street	nvarchar
-Customer Zipcode	nvarchar
-Department Id	nvarchar
-Department Name	nvarchar
-Latitude	nvarchar
-Longitude	nvarchar
-Market	nvarchar
-Order City	nvarchar
-Order Country	nvarchar
-Order Customer Id	nvarchar
-order date (DateOrders)	nvarchar
-Order Id	nvarchar
-Order Item Cardprod Id	nvarchar
-Order Item Discount	nvarchar
-Order Item Discount Rate	nvarchar
-Order Item Id	nvarchar
-Order Item Product Price	nvarchar
-Order Item Profit Ratio	nvarchar
-Order Item Quantity	nvarchar
-Sales	nvarchar
-Order Item Total	nvarchar
-Order Profit Per Order	nvarchar
-Order Region	nvarchar
-Order State	nvarchar
-Order Status	nvarchar
-Order Zipcode	nvarchar
-Product Card Id	nvarchar
-Product Category Id	nvarchar
-Product Description	nvarchar
-Product Image	nvarchar
-Product Name	nvarchar
-Product Price	nvarchar
-Product Status	nvarchar
-shipping date (DateOrders)	nvarchar
-Shipping Mode	nvarchar
+
+
+CREATE TABLE Staging_SupplyChain (
+    [Type]                          NVARCHAR(50),
+    [Days for shipping (real)]      NVARCHAR(50),
+    [Days for shipment (scheduled)] NVARCHAR(50),
+    [Benefit per order]             NVARCHAR(50),
+    [Sales per customer]            NVARCHAR(50),
+    [Delivery Status]               NVARCHAR(50),
+    [Late_delivery_risk]            NVARCHAR(50),
+    [Category Id]                   NVARCHAR(50),
+    [Category Name]                 NVARCHAR(100),
+    [Customer City]                 NVARCHAR(100),
+    [Customer Country]              NVARCHAR(100),
+    [Customer Email]                NVARCHAR(100),
+    [Customer Fname]                NVARCHAR(100),
+    [Customer Id]                   NVARCHAR(50),
+    [Customer Lname]                NVARCHAR(100),
+    [Customer Password]             NVARCHAR(100),
+    [Customer Segment]              NVARCHAR(50),
+    [Customer State]                NVARCHAR(100),
+    [Customer Street]               NVARCHAR(200),
+    [Customer Zipcode]              NVARCHAR(20),
+    [Department Id]                 NVARCHAR(50),
+    [Department Name]               NVARCHAR(100),
+    [Latitude]                      NVARCHAR(50),
+    [Longitude]                     NVARCHAR(50),
+    [Market]                        NVARCHAR(50),
+    [Order City]                    NVARCHAR(100),
+    [Order Country]                 NVARCHAR(100),
+    [Order Customer Id]             NVARCHAR(50),
+    [order date (DateOrders)]       NVARCHAR(50),
+    [Order Id]                      NVARCHAR(50),
+    [Order Item Cardprod Id]        NVARCHAR(50),
+    [Order Item Discount]           NVARCHAR(50),
+    [Order Item Discount Rate]      NVARCHAR(50),
+    [Order Item Id]                 NVARCHAR(50),
+    [Order Item Product Price]      NVARCHAR(50),
+    [Order Item Profit Ratio]       NVARCHAR(50),
+    [Order Item Quantity]           NVARCHAR(50),
+    [Sales]                         NVARCHAR(50),
+    [Order Item Total]              NVARCHAR(50),
+    [Order Profit Per Order]        NVARCHAR(50),
+    [Order Region]                  NVARCHAR(100),
+    [Order State]                   NVARCHAR(100),
+    [Order Status]                  NVARCHAR(50),
+    [Order Zipcode]                 NVARCHAR(20),
+    [Product Card Id]               NVARCHAR(50),
+    [Product Category Id]           NVARCHAR(50),
+    [Product Description]           NVARCHAR(MAX),
+    [Product Image]                 NVARCHAR(MAX),
+    [Product Name]                  NVARCHAR(200),
+    [Product Price]                 NVARCHAR(50),
+    [Product Status]                NVARCHAR(50),
+    [shipping date (DateOrders)]    NVARCHAR(50),
+    [Shipping Mode]                 NVARCHAR(50)
+)
