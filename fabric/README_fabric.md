@@ -27,3 +27,5 @@ Raw CSV → Bronze → Silver → Gold → Power BI
 - Europe leads with 10.8M in total sales
 - First Class shipping has highest late delivery rate
 - Standard Class most reliable shipping mode
+## Dashboard Preview
+![Supply Chain Fabric Dashboard](dashboard_preview.png)
